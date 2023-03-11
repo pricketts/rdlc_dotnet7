@@ -1,4 +1,4 @@
-﻿namespace rdlc_dotnet7
+﻿namespace ex1_nodata
 {
     partial class Form1
     {
