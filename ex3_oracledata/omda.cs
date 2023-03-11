@@ -1,7 +1,7 @@
 ﻿using Oracle.ManagedDataAccess.Client;
 using System.Data;
 
-namespace rdlc_dotnet7
+namespace ex3_oracledata
 {
     public class omda
     {
@@ -20,15 +20,22 @@ namespace rdlc_dotnet7
 
         public bool Connect(string uid, string pwd, string server, string port, string sid)
         {
-            ConnectionString = "User Id=" + uid + ";Password=" + pwd + ";Data Source=" + server + ":" + port + "/" + sid;
-            Connection = new OracleConnection(ConnectionString);
-            Connection.Open();
+            try
+            {
+                ConnectionString = "User Id=" + uid + ";Password=" + pwd + ";Data Source=" + server + ":" + port + "/" + sid;
+                Connection = new OracleConnection(ConnectionString);
+                Connection.Open();
 
-            Uid = uid;
-            Pwd = pwd;
-            Server = server;
-            Port = port;
-            Sid = sid;
+                Uid = uid;
+                Pwd = pwd;
+                Server = server;
+                Port = port;
+                Sid = sid;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             return Connected();
         }

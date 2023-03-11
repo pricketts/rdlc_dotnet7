@@ -1,6 +1,6 @@
 ﻿namespace ex2_embeddeddata
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
         ///  Required designer variable.
@@ -50,9 +50,9 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Controls.Add(reportViewer1);
-            panel1.Location = new Point(12, 122);
+            panel1.Location = new Point(12, 72);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1137, 387);
+            panel1.Size = new Size(1137, 437);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
@@ -62,7 +62,7 @@
             reportViewer1.Location = new Point(0, 0);
             reportViewer1.Name = "ReportViewer";
             reportViewer1.ServerReport.BearerToken = null;
-            reportViewer1.Size = new Size(1137, 387);
+            reportViewer1.Size = new Size(1137, 437);
             reportViewer1.TabIndex = 0;
             // 
             // label2
@@ -92,7 +92,7 @@
             label4.TabIndex = 5;
             label4.Text = "Step 3. In the Form load event create a DataTable with the columns ID and NAME then populate it with a few rows of data, and bind this DataTable into the DataSources of the report";
             // 
-            // Form1
+            // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -102,7 +102,7 @@
             Controls.Add(label2);
             Controls.Add(panel1);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Form2";
             Text = "RDLC Test in VS2022 using the buggy ReportViewer download (15.1.17)";
             Load += Form1_Load;
             panel1.ResumeLayout(false);

@@ -9,34 +9,36 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Report2.rdlc" />
+    <None Remove="Report3.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Report2.rdlc">
+    <EmbeddedResource Include="Report3.rdlc">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.90" />
     <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.17" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="DataSet2.Designer.cs">
+    <Compile Update="DataSet3.Designer.cs">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>DataSet2.xsd</DependentUpon>
     </Compile>
-    <Compile Update="Form2.cs">
+    <Compile Update="Form3.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DataSet2.xsd">
+    <None Update="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

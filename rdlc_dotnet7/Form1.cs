@@ -38,7 +38,7 @@ namespace rdlc_dotnet7
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            var res = FindResourceName("Report1.rdlc");
+            var res = FindResourceName("Report0.rdlc");
             DataSet1 data = new DataSet1();
 
             reportViewer1.LocalReport.ReportEmbeddedResource = res;
