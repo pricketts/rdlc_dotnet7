@@ -8,8 +8,9 @@ a data table, which itself was created from an SQL statement, the report layout 
 
 The ReportViewer appears to have been abandonned by Microsoft, and when I discovered that there was a nuget package I thought lets have a play with it.
 
-I found a YouTube video where the various bugs and work arounds were shown to the point where a report was produced, that helped, but it was just the 
-start of the journey.
+I found a YouTube video https://www.youtube.com/watch?v=Ul6r0GZXgsg where the various bugs and work arounds were shown to the point where a report was 
+produced, that helped, but it was just the start of the journey.  The ReportViewerCore control doesn't seem to be properly integrated into the Visual 
+Studio Designer, but you dont really need it to be there at design time anyway, it can be added in code at run time.
 
 This project is split into a number of examples
 ### ex1 
@@ -27,4 +28,12 @@ This project is split into a number of examples
 I chose Oracle because that is my background, thats what I have installed on my machine and there are already loads of examples on line for SQL 
 Server.  You will need to have access to an Oracle Server for this to work.  There is a free Oracle XE database download available online.
 
-The column names of the Oracle data has to match the column names in the DataSet that was used for the report in the designer
+The column names of the Oracle data has to match the column names in the DataSet that was used for the report in the designer.
+
+The conventional way to bind the report to the database object would be to connect to the database in the Server Explorer, then find the table or 
+view with the columns you want to display in the report, I would create a view in the database then use that to do the designer part, then once the 
+report was there I would drop the view and delete any additional things like DataSets that were created in the project, 
+
+### ex4
+- shows how to add the control at run time bypassing all the designer bugs
+
