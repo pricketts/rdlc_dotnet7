@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33402.96
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "rdlc_dotnet7", "rdlc_dotnet7\rdlc_dotnet7.csproj", "{87083DC0-6145-49A8-B80C-213928B32571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex1_nodata", "ex1_nodata\ex1_nodata.csproj", "{BCB030A6-AE4D-4337-8E90-F8A9A9DB5928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ex1_nodata", "ex1_nodata\ex1_nodata.csproj", "{BCB030A6-AE4D-4337-8E90-F8A9A9DB5928}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ex2_embeddeddata", "ex2_embeddeddata\ex2_embeddeddata.csproj", "{6A1D62EE-0217-4FA2-85FB-276F2E530F11}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{BCB030A6-AE4D-4337-8E90-F8A9A9DB5928}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCB030A6-AE4D-4337-8E90-F8A9A9DB5928}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCB030A6-AE4D-4337-8E90-F8A9A9DB5928}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A1D62EE-0217-4FA2-85FB-276F2E530F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A1D62EE-0217-4FA2-85FB-276F2E530F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A1D62EE-0217-4FA2-85FB-276F2E530F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A1D62EE-0217-4FA2-85FB-276F2E530F11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
