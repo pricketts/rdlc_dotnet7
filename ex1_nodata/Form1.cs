@@ -1,6 +1,4 @@
-using Microsoft.Reporting.Map.WebForms.BingMaps;
 using Microsoft.Reporting.WinForms;
-using System.Data;
 
 namespace ex1_nodata
 {
@@ -16,8 +14,12 @@ namespace ex1_nodata
 
         }
 
-        private string FindResourceName(string endswith)
+        private string FindResourceName(string filename)
         {
+            // I have found that this is a reliable way of getting the named resource,
+            // otherwise the full path would have to be hard coded,
+            // this way just the filename has to be hard coded
+
             var assembly = System.Reflection.Assembly.GetEntryAssembly();
             var resourceNames = assembly.GetManifestResourceNames();
 
@@ -26,7 +28,7 @@ namespace ex1_nodata
                 System.Diagnostics.Debug.Write(res);
             }
 
-            return resourceNames.FirstOrDefault(x => x.EndsWith("Report1.rdlc"));
+            return resourceNames.FirstOrDefault(x => x.EndsWith(filename));
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace ex1_nodata
 
             reportViewer1.LocalReport.ReportEmbeddedResource = res;
 
-            reportViewer1.SetDisplayMode(Microsoft.Reporting.WinForms.DisplayMode.PrintLayout);
+            reportViewer1.SetDisplayMode(DisplayMode.PrintLayout);
             reportViewer1.RefreshReport();
         }
     }

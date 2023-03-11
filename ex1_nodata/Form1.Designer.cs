@@ -44,9 +44,9 @@
             label1.AutoSize = true;
             label1.Location = new Point(12, 9);
             label1.Name = "label1";
-            label1.Size = new Size(680, 15);
+            label1.Size = new Size(738, 15);
             label1.TabIndex = 0;
-            label1.Text = "Step 1. Download and Install the RDLC Report Designer 2022 Extension, this is a VSIX file and will need to shutdown Visual Studio";
+            label1.Text = "Step 1. Download and Install the RDLC Report Designer 2022 Extension, this is a VSIX file and will need to shutdown Visual Studio to install it";
             // 
             // label2
             // 
