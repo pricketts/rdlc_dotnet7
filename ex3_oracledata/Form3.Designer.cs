@@ -47,6 +47,8 @@
             toolStripLabel5 = new ToolStripLabel();
             txtSid = new ToolStripTextBox();
             cmdConnect = new ToolStripButton();
+            label5 = new Label();
+            panel2 = new Panel();
             panel1.SuspendLayout();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -64,9 +66,9 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Controls.Add(reportViewer1);
-            panel1.Location = new Point(12, 115);
+            panel1.Location = new Point(12, 128);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1137, 394);
+            panel1.Size = new Size(1137, 381);
             panel1.TabIndex = 2;
             panel1.Paint += panel1_Paint;
             // 
@@ -76,7 +78,7 @@
             reportViewer1.Location = new Point(0, 0);
             reportViewer1.Name = "ReportViewer";
             reportViewer1.ServerReport.BearerToken = null;
-            reportViewer1.Size = new Size(1137, 394);
+            reportViewer1.Size = new Size(1137, 381);
             reportViewer1.TabIndex = 0;
             // 
             // label2
@@ -181,15 +183,35 @@
             cmdConnect.Image = (Image)resources.GetObject("cmdConnect.Image");
             cmdConnect.ImageTransparentColor = Color.Magenta;
             cmdConnect.Name = "cmdConnect";
-            cmdConnect.Size = new Size(56, 22);
-            cmdConnect.Text = "Connect";
+            cmdConnect.Size = new Size(148, 22);
+            cmdConnect.Text = "Connect and Refresh Data";
             cmdConnect.Click += cmdConnect_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(12, 95);
+            label5.Name = "label5";
+            label5.Size = new Size(866, 15);
+            label5.TabIndex = 8;
+            label5.Text = "Step 3. Change the Database connection details, then click Connect and Refresh Data, the SQL query will work against any Oracle database regardless of tables etc...";
+            // 
+            // panel2
+            // 
+            panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Dock = DockStyle.Top;
+            panel2.Location = new Point(0, 25);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1161, 2);
+            panel2.TabIndex = 9;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1161, 521);
+            Controls.Add(panel2);
+            Controls.Add(label5);
             Controls.Add(toolStrip1);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -226,5 +248,7 @@
         private ToolStripLabel toolStripLabel5;
         private ToolStripTextBox txtSid;
         private ToolStripButton cmdConnect;
+        private Label label5;
+        private Panel panel2;
     }
 }
