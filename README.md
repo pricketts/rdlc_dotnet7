@@ -26,7 +26,13 @@ This project is split into a number of examples
 - the Oracle.ManagedDataAccess.Core nuget package has to be installed and then some code to connect to the database and issue a select query
 
 I chose Oracle because that is my background, thats what I have installed on my machine and there are already loads of examples on line for SQL 
-Server.  You will need to have access to an Oracle Server for this to work.  There is a free Oracle XE database download available online.
+Server.  You will need to have access to an Oracle Server for this to work.  There is a free Oracle XE database download available online.  My personal 
+preference is for version 11g, I missed out on 18c and now 21c, I have looked at 21c and it is structured different internally which I haven't got a
+handle on yet, 11g is pretty straight forward in an "it just works" sense, Oracle have hidden the links to the 11g download, you will have to register 
+to download it but it is here:
+
+https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
+
 
 The column names of the Oracle data has to match the column names in the DataSet that was used for the report in the designer.
 
